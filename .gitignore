@@ -1,8 +1,9 @@
 *~
-*pyc
-*txt
-*buffer
-*group
-*.o
-bpmf_hmc
-line_shuffle
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+data/
+runs/
+runs_cluster/
+.codex/
