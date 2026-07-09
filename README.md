@@ -150,6 +150,22 @@ Headline numbers (originals re-run, not quoted from the paper):
 | ml-1m fold 1 SGHMC, 1000 rounds: test RMSE | 0.8404 | 0.8394 | 0.8393 |
 | ml-1m fold 1 SGLD, 1000 rounds: test RMSE | 0.8404 | 0.8396 | 0.8396 |
 
+Speed: migration gains
+----------------------
+
+Wall-clock for the full experiments, original implementation vs this port
+(same configurations; local CPU is an Apple M-series, GPU is an H100):
+
+| experiment | original | JAX (CPU) | JAX (H100) | GPU speedup |
+|---|---|---|---|---|
+| bayesnn MNIST, 800 rounds | numpy, 194 s | 105 s | 21.9 s | 8.9x |
+| mf ml-1m, 1000 rounds | C++ (14 cores), ~25 min | ~60 min | 88.5 s | ~17x |
+| figure 3a sweep, L = 1e7 x 10 | matlab/Octave, ~45 min | 4.1 min | — | 11x (CPU) |
+
+The bayesnn original is vectorized numpy, so the CPU-to-CPU gain is modest
+(~1.9x); the wins come from running the identical code on GPU, which the
+original implementations cannot do.
+
 Tests
 -----
 
