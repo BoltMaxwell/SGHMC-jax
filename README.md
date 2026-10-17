@@ -18,11 +18,17 @@ credit for the method and the experimental design belongs to the original
 authors:
 
 ```bibtex
-@inproceedings{chen2014stochastic,
-  title={Stochastic gradient {H}amiltonian {M}onte {C}arlo},
-  author={Chen, Tianqi and Fox, Emily and Guestrin, Carlos},
-  booktitle={International Conference on Machine Learning},
-  year={2014}
+@inproceedings{pmlr-v32-cheni14,
+  title     = {Stochastic Gradient {H}amiltonian {M}onte {C}arlo},
+  author    = {Chen, Tianqi and Fox, Emily and Guestrin, Carlos},
+  booktitle = {Proceedings of the 31st International Conference on Machine Learning},
+  pages     = {1683--1691},
+  year      = {2014},
+  volume    = {32},
+  number    = {2},
+  series    = {Proceedings of Machine Learning Research},
+  publisher = {PMLR},
+  url       = {https://proceedings.mlr.press/v32/cheni14.html}
 }
 ```
 
