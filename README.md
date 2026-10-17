@@ -183,3 +183,10 @@ JAX_PLATFORMS=cpu python tests/test_experiments.py
 (or `pytest tests/`). The sampler tests include the bit-equivalence check
 between backends for SGLD and the Lyapunov-verified stationary-variance
 checks for both SGHMC splittings.
+
+License
+-------
+
+Apache License 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE). The upstream
+code, [tqchen/ML-SGHMC](https://github.com/tqchen/ML-SGHMC), carries no license
+of its own; this port is an independent reimplementation.

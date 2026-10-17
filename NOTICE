@@ -1,0 +1,20 @@
+SGHMC-jax
+Copyright 2026 Maxwell Bolt
+
+Licensed under the Apache License, Version 2.0; see the LICENSE file.
+
+This repository is a JAX port of the SGHMC experiment code (ML-SGHMC),
+    https://github.com/tqchen/ML-SGHMC
+by Tianqi Chen, Emily Fox and Carlos Guestrin, which accompanies
+
+    Chen, Fox and Guestrin. "Stochastic Gradient Hamiltonian Monte Carlo."
+    ICML 2014, PMLR 32(2):1683-1691.
+
+The method, the experimental design and the original code are theirs; this
+repository ports them and does not introduce them. The upstream commits
+survive in this repository's git history. The original repository carries no
+license of its own; this port is an independent reimplementation released
+under the Apache License 2.0.
+
+The port was written with the assistance of Claude Code (Anthropic).
+If you use this software, please cite the paper above (see CITATION.cff).

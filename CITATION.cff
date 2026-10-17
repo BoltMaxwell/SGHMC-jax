@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: SGHMC-jax
+message: >-
+  This repository is a JAX port; the method and the original code belong to the
+  authors of the paper below. If you use this software, please cite that paper
+  (preferred-citation) and, if appropriate, the original code (references).
+type: software
+authors:
+  - family-names: Bolt
+    given-names: Maxwell
+    affiliation: Purdue University
+repository-code: https://github.com/BoltMaxwell/SGHMC-jax
+license: Apache-2.0
+version: 0.1.0
+date-released: "2026-10-17"
+preferred-citation:
+  type: conference-paper
+  title: "Stochastic Gradient Hamiltonian Monte Carlo"
+  authors:
+    - family-names: Chen
+      given-names: Tianqi
+    - family-names: Fox
+      given-names: Emily
+    - family-names: Guestrin
+      given-names: Carlos
+  collection-title: "Proceedings of the 31st International Conference on Machine Learning"
+  collection-type: proceedings
+  conference:
+    name: "ICML 2014"
+  year: 2014
+  volume: 32
+  issue: 2
+  start: 1683
+  end: 1691
+  publisher:
+    name: "PMLR"
+  url: "https://proceedings.mlr.press/v32/cheni14.html"
+references:
+  - type: software
+    title: "SGHMC experiment code (ML-SGHMC)"
+    authors:
+      - family-names: Chen
+        given-names: Tianqi
+      - family-names: Fox
+        given-names: Emily
+      - family-names: Guestrin
+        given-names: Carlos
+    repository-code: https://github.com/tqchen/ML-SGHMC
+    notes: The upstream repository this port was made from; it carries no license.
